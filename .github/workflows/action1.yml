@@ -15,5 +15,5 @@ jobs:
           echo "This is pull request from origin"
           echo ${{ github.event.pull_request.head.repo.full_name }}
           echo ${{ github.event.pull_request.head.ref }}
-          echo ${{ vars.TEST_VARIABLE }}
+          echo "test variable = ${{ vars.TEST_VARIABLE }}"
           ls -la
