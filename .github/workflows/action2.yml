@@ -4,8 +4,13 @@ on:
   pull_request_target
 
 jobs:
-  first:
+  pull-request-target:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout to repo
+        uses: actions/checkout@v4
+
       - name: Run command
-        run: echo "This is pull request from origin"
+        run: |
+          echo "This is pull request target from origin"
+          ls -la
