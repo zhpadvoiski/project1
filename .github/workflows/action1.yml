@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Run command
         run: |
-        echo "This is pull request from origin"
-        ls -la
+          echo "This is pull request from origin"
+          ls -la
