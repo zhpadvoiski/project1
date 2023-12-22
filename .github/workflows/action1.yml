@@ -16,4 +16,5 @@ jobs:
           echo ${{ github.event.pull_request.head.repo.full_name }}
           echo ${{ github.event.pull_request.head.ref }}
           echo "test variable = ${{ vars.TEST_VARIABLE }}"
+          echo "lalala"
           ls -la
