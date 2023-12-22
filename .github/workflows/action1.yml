@@ -1,0 +1,11 @@
+name: Pull Request
+
+on:
+  pull_request
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run command
+        run: echo "This is pull request from origin"
