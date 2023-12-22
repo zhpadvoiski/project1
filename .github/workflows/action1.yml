@@ -2,6 +2,8 @@ name: Pull Request
 
 on:
   pull_request
+env:
+  GITHUB_COPY: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   pull-request:
@@ -17,4 +19,5 @@ jobs:
           echo ${{ github.event.pull_request.head.ref }}
           echo "test variable = ${{ vars.TEST_VARIABLE }}"
           echo "lalala"
+          echo $GITHUB_COPY
           ls -la
