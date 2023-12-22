@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run command
-        run: echo "This is pull request from origin"
+        run: echo "This is pull request target from origin"
